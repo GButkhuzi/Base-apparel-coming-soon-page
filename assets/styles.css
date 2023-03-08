@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+}
+
+.main-container {
+    max-width: 375px;
+    min-width: 275px;
+    height: 800px;
+    /*max-height vcado aq*/
+    background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+
+}
+
+.main-container>:first-child {
+    max-width: 30%;
+    margin: 33px;
+}
+
+.image-container {
+    width: 100%;
+    height: 32%;
+    background-image: url('./images/hero-mobile.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+
+
+.text-container {
+    margin: 32px;
+}
+
+
+.text-container>img {
+    display: none;
+}
+
+.text-container>h1 {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 10.8254px;
+    color: #CE9898;
+    text-transform: uppercase;
+}
+
+.text-container>h2 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 10.8254px;
+    color: #423A3A;
+    text-transform: uppercase;
+}
+
+
+.text-container>p {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #CE9898;
+}
+
+
+
+form {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+input {
+    width: 100%;
+    height: 48px;
+    padding-left: 20px;
+    background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    border: 1px solid #CE9898;
+    border-radius: 28px;
+    align-self: center;
+    outline: none;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #423A3A;
+
+}
+
+::placeholder {
+    padding-left: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #CE9898;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+
+
+form>button {
+    Width: 64px;
+    Height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+    border-radius: 28px;
+    position: absolute;
+    left: 80%;
+}
+
+form>button:hover {
+    cursor: pointer;
+    background: linear-gradient(135deg, #F8BFBF 50%, #EE8B8B 100%);
+    transition: 0.5s;
+}
+
+input:invalid {
+    border: 4px solid #F96464;
+    border-radius: 28px;
+    outline: none;
+}
+
+
+
+
+
+
+@media only screen and (min-width:500px) {
+
+    .main-container {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 165px;
+        max-width: 1440px;
+        background-color: white;
+        background-image: url('./images/bg-pattern-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .main-container>img {
+        display: none;
+
+    }
+
+    .text-container>img {
+        display: block;
+
+    }
+
+
+    .image-container {
+        width: 100%;
+        height: 100%;
+        background-image: url('./images/hero-desktop.jpg');
+        background-size: cover;
+    }
+
+    .text-container {
+        margin: 0px;
+        padding-left: 165px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
+
+
+    .text-container>h1,
+    .text-container>h2,
+    .text-container>p {
+        text-align: left;
+
+
+    }
+
+
+    .text-container>img {
+        max-width: 40%;
+        margin-bottom: 200px;
+
+    }
+
+
+    .text-container>h1 {
+        font-weight: 300;
+        font-size: 64px;
+        line-height: 64px;
+        letter-spacing: 17.3206px;
+        color: #CE9898;
+        text-transform: uppercase;
+    }
+
+    .text-container>h2 {
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 71px;
+        letter-spacing: 17.3206px;
+        color: #423A3A;
+    }
+
+
+    .text-container>p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #CE9898;
+    }
+
+
+
+    form>button {
+        Width: 100px;
+        Height: 56px;
+        left: 80%;
+    }
+
+
+
+
+
+
+
+
+
+
+    input {
+        width: 100%;
+        height: 56px;
+
+    }
+
+}
